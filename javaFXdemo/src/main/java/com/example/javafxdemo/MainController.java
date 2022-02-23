@@ -102,8 +102,8 @@ public class MainController implements Externalizable {
             filePath.setText("/home/phsave.bin");
         } else if (HelloApplication.isWindows()){
             System.out.println("This is Windows");
-            //System.out.println("Set default filePath for Windows C:\\phsave.bin");
-            filePath.setText("C:\\phsave.bin");
+            //System.out.println("Set default filePath for Windows C:\tmp\phsave.bin");
+            filePath.setText("C:\\tmp\\phsave.bin");
         }
         System.out.println("save to >>> " + filePath.getText());
         try (ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream(filePath.getText()))) {
@@ -117,15 +117,15 @@ public class MainController implements Externalizable {
     }
 
     @FXML
-    protected void loadData() throws IOException {
+    protected void loadData() {
         if (HelloApplication.isUnix()){
             System.out.println("This is Unix");
             //System.out.println("Set default filePath for Unix /home/phsave.bin");
             filePath.setText("/home/phsave.bin");
         } else if (HelloApplication.isWindows()){
             System.out.println("This is Windows");
-            //System.out.println("Set default filePath for Windows C:\\phsave.bin");
-            filePath.setText("C:\\phsave.bin");
+            //System.out.println("Set default filePath for Windows C:\tmp\phsave.bin");
+            filePath.setText("C:\\tmp\\phsave.bin");
         }
         System.out.println("load from >>> " + filePath.getText());
         try (ObjectInputStream ois = new ObjectInputStream(new FileInputStream(filePath.getText()))) {
