@@ -1,5 +1,3 @@
-# PayHome
-My first program.
-Designed to introduce QT.
+# PayHome javaFX
 
-I use it every month, for other people it is generally useless
+Designed to introduce javaFX.
