@@ -1,3 +1,3 @@
-# PayHome javaFX
+# PayHome
 
-Designed to introduce javaFX.
+Simple calculator making for introduce myself to qt & javafx
